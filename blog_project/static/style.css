@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p.author {
+    font-style: italic;
+}
+
+.post p.date {
+    color: #666;
+}
+
+.post a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}

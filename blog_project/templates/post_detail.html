@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ blog_post.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blogapp/style.css' %}">
+</head>
+<body>
+    <h1>{{ blog_post.title }}</h1>
+    
+    <div class="post">
+        <p>{{ blog_post.content }}</p>
+        <p class="author">Author: {{ blog_post.author }}</p>
+        <p class="date">Published: {{ blog_post.created_at }}</p>
+    </div>
+</body>
+</html>
+

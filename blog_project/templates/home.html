@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Application</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blogapp/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Blog Application</h1>
+    
+    <div class="posts">
+        {% for post in blog_posts %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <p class="author">Author: {{ post.author }}</p>
+            <p class="date">Published: {{ post.created_at }}</p>
+            <a href="{% url 'blog_post_detail' post.pk %}">Read More</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
